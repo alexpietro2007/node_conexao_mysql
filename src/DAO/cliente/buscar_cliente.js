@@ -2,6 +2,7 @@ const {conexao} = require('../conexao.js')
 
 
 async function buscarClientes(){
+  console.log('DAO de CLIENTE')
     const sql = `SELECT * FROM tbl_cliente;`
     
     const conn = await conexao()
